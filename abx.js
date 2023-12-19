@@ -47,11 +47,11 @@ function start_experiment() {
     */
     var method_list_path = [];
     // the first one is the reference method
-    method_list_path.push(wav_dir + "set" + set_num + "/world.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/method1.list");
     // the following ones are methods you want to compare
-    method_list_path.push(wav_dir + "set" + set_num + "/nsf.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/qppwg.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/usfgan.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/method2.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/method3.list");
+    //method_list_path.push(wav_dir + "set" + set_num + "/usfgan.list");
     /*
         end
     */
@@ -104,10 +104,6 @@ function makeFileList(method_list_path) {
         pairs = [
             [method[0][i], method[1][i], method[2][i]],
             [method[0][i], method[2][i], method[1][i]],
-            [method[0][i], method[2][i], method[3][i]],
-            [method[0][i], method[3][i], method[2][i]],
-            [method[0][i], method[1][i], method[3][i]],
-            [method[0][i], method[3][i], method[1][i]],
         ]
         /*
             end
