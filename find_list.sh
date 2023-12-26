@@ -1,5 +1,5 @@
 #!/bin/bash
-sets=(set1)
+sets=(set1 set2 set3 set4 set5)
 
 methods=(firstrec firstrt)
 levels=(easy difficult)
