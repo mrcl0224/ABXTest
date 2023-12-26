@@ -18,6 +18,8 @@ for set in ${sets[@]}; do
     done
 done
 
-# for target in ${target_dir[@]}; do
-#     find wav/$set -name "*.wav" | grep "natural_${target}" > wav/$set/natural_${target}.list
-# done
+for set in ${sets[@]}; do
+    for target in ${target_dir[@]}; do
+        find wav/$set -name "*.wav" | grep "natural_${target}" > wav/$set/natural_${target}.list
+    done
+done
