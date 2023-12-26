@@ -3,7 +3,7 @@ sets=(set1)
 
 methods=(firstrec firstrt)
 levels=(easy difficult)
-patterns=(before after)
+patterns=(before after after2nd)
 target_dir=(2_morikawa 3_okada 4_otake 5_uchino 33_mizokuchi 34_taga 35_takada 36_yamada)
 
 for set in ${sets[@]}; do
