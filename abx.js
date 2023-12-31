@@ -46,63 +46,26 @@ function start_experiment() {
         you have to customize this part
     */
     var method_list_path = [];
-    //話者2は該当者がいない
-    //話者3
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_before_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after2nd_3_okada.list");    
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_before_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after2nd_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_before_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after_3_okada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after2nd_3_okada.list");
-    //話者4
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_4_otake.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_before_4_otake.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after_4_otake.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after2nd_4_otake.list");
-    //話者5
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_before_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after2nd_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_before_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after2nd_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_before_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after_5_uchino.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after2nd_5_uchino.list");
-    //話者33
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_before_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after2nd_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_before_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after_33_mizokuchi.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after2nd_33_mizokuchi.list");
-    //話者34
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_before_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after2nd_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_before_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after_34_taga.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after2nd_34_taga.list");
-    //話者35
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_35_takada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_before_35_takada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after_35_takada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after2nd_35_takada.list");
-    //話者36
-    method_list_path.push(wav_dir + "set" + set_num + "/natural_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_before_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after2nd_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_before_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after_36_yamada.list");
-    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after2nd_36_yamada.list");
+    //firstrec_difficult
+    method_list_path.push(wav_dir + "set" + set_num + "/natural_firstrec_difficult.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_before.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_difficult_after2nd.list");
+    //firstrec_easy
+    method_list_path.push(wav_dir + "set" + set_num + "/natural_firstrec_easy.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_before.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrec_easy_after2nd.list");
+    //firstrt_difficult
+    method_list_path.push(wav_dir + "set" + set_num + "/natural_firstrt_difficult.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_before.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_difficult_after2nd.list");
+    //firstrt_easy
+    method_list_path.push(wav_dir + "set" + set_num + "/natural_firstrt_easy.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_before.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after.list");
+    method_list_path.push(wav_dir + "set" + set_num + "/firstrt_easy_after2nd.list");
     /*
         end
     */
@@ -157,58 +120,26 @@ function makeFileList(method_list_path) {
             [method[0][i], method[2][i], method[1][i]],
             [method[0][i], method[1][i], method[3][i]],
             [method[0][i], method[3][i], method[1][i]],
-            [method[0][i], method[4][i], method[5][i]],
-            [method[0][i], method[5][i], method[4][i]],
-            [method[0][i], method[4][i], method[6][i]],
-            [method[0][i], method[6][i], method[4][i]],
-            [method[0][i], method[7][i], method[8][i]],
-            [method[0][i], method[8][i], method[7][i]],
-            [method[0][i], method[7][i], method[9][i]],
-            [method[0][i], method[9][i], method[7][i]],
-            [method[10][i], method[11][i], method[12][i]],
-            [method[10][i], method[12][i], method[11][i]],
-            [method[10][i], method[11][i], method[13][i]],
-            [method[10][i], method[13][i], method[11][i]],
-            [method[14][i], method[15][i], method[16][i]],
-            [method[14][i], method[16][i], method[15][i]],
-            [method[14][i], method[15][i], method[17][i]],
-            [method[14][i], method[17][i], method[15][i]],
-            [method[14][i], method[18][i], method[19][i]],
-            [method[14][i], method[19][i], method[18][i]],
-            [method[14][i], method[18][i], method[20][i]],
-            [method[14][i], method[20][i], method[18][i]],
-            [method[14][i], method[21][i], method[22][i]],
-            [method[14][i], method[22][i], method[21][i]],
-            [method[14][i], method[21][i], method[23][i]],
-            [method[14][i], method[23][i], method[21][i]],
-            [method[24][i], method[25][i], method[26][i]],
-            [method[24][i], method[26][i], method[25][i]],
-            [method[24][i], method[25][i], method[27][i]],
-            [method[24][i], method[27][i], method[25][i]],
-            [method[24][i], method[28][i], method[29][i]],
-            [method[24][i], method[29][i], method[28][i]],
-            [method[24][i], method[28][i], method[30][i]],
-            [method[24][i], method[30][i], method[28][i]],
-            [method[31][i], method[32][i], method[33][i]],
-            [method[31][i], method[33][i], method[32][i]],
-            [method[31][i], method[32][i], method[34][i]],
-            [method[31][i], method[34][i], method[32][i]],
-            [method[31][i], method[35][i], method[36][i]],
-            [method[31][i], method[36][i], method[35][i]],
-            [method[31][i], method[35][i], method[37][i]],
-            [method[31][i], method[37][i], method[35][i]],
-            [method[38][i], method[39][i], method[40][i]],
-            [method[38][i], method[40][i], method[39][i]],
-            [method[38][i], method[39][i], method[41][i]],
-            [method[38][i], method[41][i], method[39][i]],
-            [method[42][i], method[43][i], method[44][i]],
-            [method[42][i], method[44][i], method[43][i]],
-            [method[42][i], method[43][i], method[45][i]],
-            [method[42][i], method[45][i], method[43][i]],
-            [method[42][i], method[46][i], method[47][i]],
-            [method[42][i], method[47][i], method[46][i]],
-            [method[42][i], method[46][i], method[48][i]],
-            [method[42][i], method[48][i], method[46][i]],
+            [method[0][i], method[2][i], method[3][i]],
+            [method[0][i], method[3][i], method[2][i]],
+            [method[4][i], method[5][i], method[6][i]],
+            [method[4][i], method[6][i], method[5][i]],
+            [method[4][i], method[5][i], method[7][i]],
+            [method[4][i], method[7][i], method[5][i]],
+            [method[4][i], method[6][i], method[7][i]],
+            [method[4][i], method[7][i], method[6][i]],
+            [method[8][i], method[9][i], method[10][i]],
+            [method[8][i], method[10][i], method[9][i]],
+            [method[8][i], method[9][i], method[11][i]],
+            [method[8][i], method[11][i], method[9][i]],
+            [method[8][i], method[10][i], method[11][i]],
+            [method[8][i], method[11][i], method[10][i]],
+            [method[12][i], method[13][i], method[14][i]],
+            [method[12][i], method[14][i], method[13][i]],
+            [method[12][i], method[13][i], method[15][i]],
+            [method[12][i], method[15][i], method[13][i]],
+            [method[12][i], method[14][i], method[15][i]],
+            [method[12][i], method[15][i], method[14][i]],
         ]
         /*
             end
