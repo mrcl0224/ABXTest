@@ -107,27 +107,33 @@ function makeFileList(method_list_path) {
 
     var files = Array();
     for (var i = 0; i < method[0].length; i++) {
-        // TODO: automate here
-        /*
-            you have to customize this part
-            if you don't want to compare 3 methods
-            you need to rewrite 'pairs'.
-            'pairs' consists of n_P_2 triplets, where
-            'n' is num of methods you want to compare.
-        */
+    
         pairs = [
             [method[0][i], method[1][i], method[2][i]],
             [method[0][i], method[2][i], method[1][i]],
             [method[0][i], method[2][i], method[3][i]],
             [method[0][i], method[3][i], method[2][i]],
-            [method[4][i], method[5][i], method[6][i]],
-            [method[4][i], method[6][i], method[5][i]],
-            [method[4][i], method[6][i], method[7][i]],
-            [method[4][i], method[7][i], method[6][i]],
             [method[8][i], method[9][i], method[10][i]],
             [method[8][i], method[10][i], method[9][i]],
             [method[8][i], method[10][i], method[11][i]],
             [method[8][i], method[11][i], method[10][i]],
+        ]
+        /*
+            end
+        */
+
+        for (var j = 0; j < pairs.length; j++) {
+            files.push(pairs[j]);
+        }
+    }
+
+    for (var i = 0; i < method[4].length; i++) {
+    
+        pairs = [
+            [method[4][i], method[5][i], method[6][i]],
+            [method[4][i], method[6][i], method[5][i]],
+            [method[4][i], method[6][i], method[7][i]],
+            [method[4][i], method[7][i], method[6][i]],
             [method[12][i], method[13][i], method[14][i]],
             [method[12][i], method[14][i], method[13][i]],
             [method[12][i], method[14][i], method[15][i]],
